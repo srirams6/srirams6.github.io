@@ -3,8 +3,34 @@
         <title>Sriram Sundarraj</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="scripts/rainyday.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript">
+        function run() {
+            var image = document.getElementById('bg');
+            var bgdiv = document.getElementById('bgdiv');
+            image.onload = function() {
+                var engine = new RainyDay({
+                    image: this,
+                    parentElement: bgdiv,
+                    blur: 0,
+                });
+                engine.rain([ [1, 2, 8000] ]);
+                engine.rain([ [3, 3, 0.88], [5, 5, 0.9], [6, 2, 1] ], 100);
+            };
+            image.crossOrigin = 'anonymous';
+            image.src = 'http://i.imgur.com/N7ETzFO.jpg';
+        }
+        function rain(){
+            run();
+        }
+        </script>
     </head>
-    <body>
+    <body onload="rain();">
+        <div id="bgdiv">
+            <img src="" id="bg">
+            </img>
+        </div>
         <div id="content-container">
             <div id="site-header">hkjhkjhkj</div>            
             <div class="content-part">
