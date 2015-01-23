@@ -4,7 +4,7 @@ body{
 	background-attachment: fixed;
 }
 #site-header{
-	background-color: #333;
+	background-color: rgba(0, 0, 0, 0.05);
 	position: fixed;
 	width: 100%;
 	top: 0%;
@@ -12,7 +12,7 @@ body{
 	height: 8%;
 }
 #site-footer{
-	background-color: #333;
+	background-color: rgba(0, 0, 0, 0.30);
 	position: fixed;
 	width: 100%;
 	bottom: 0%;
@@ -50,9 +50,11 @@ body{
 		width: 50%;
 		padding-left: 1%;
 		padding-top: 2%;
+		margin-top: 0%;
 		margin-bottom: 2%;
 	}
 	body{
+		margin-top: 0%;
 		margin-right: 0%;
 	}
 }
