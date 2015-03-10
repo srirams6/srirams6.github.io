@@ -1,0 +1,33 @@
+body{
+	margin: 0px 0px 0px 0px;
+	background-color: #dfdfdf;
+}
+
+#intro{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	margin-top: 0%;
+	padding-top: 0%;
+	border-top: 0%;
+	background-image: url("../images/back.jpg");
+	text-align: center;
+	z-index: -1;
+	-webkit-transform: translateZ(0);
+}
+
+.content-part{
+	height: 100%;
+	width: 100%;
+	margin-top: 0%;
+	padding-top: 0%;
+	border-top: 0%;
+	-webkit-transform: translateZ(-1px);
+}
+
+.content-part-content{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 8%;
+}

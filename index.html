@@ -2,58 +2,63 @@
     <head>
         <title>Sriram Sundarraj</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="scripts/rainyday.min.js"></script>
-        <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-        <script type="text/javascript">
-        function run() {
-            var image = document.getElementById('bg');
-            var bgdiv = document.getElementById('bgdiv');
-            image.onload = function() {
-                var engine = new RainyDay({
-                    image: this,
-                    parentElement: bgdiv,
-                    blur: 0,
-                });
-                engine.rain([ [1, 2, 8000] ]);
-                engine.rain([ [3, 3, 0.88], [5, 5, 0.9], [6, 2, 1] ], 100);
-            };
-            image.crossOrigin = 'anonymous';
-            image.src = 'http://i.imgur.com/N7ETzFO.jpg';
-        }
-        function rain(){
-            run();
-        }
-        </script>
+        <link rel="stylesheet" type="text/css" href="./styles/main.css">
     </head>
-    <body onload="rain();">
-        <div id="bgdiv">
-            <img src="" id="bg">
-            </img>
+    <body>
+        <div id='intro'>
+            <h1>Hello,</h1>
+            <p>
+                I'm Sriram Sundarraj
+            </p>
         </div>
-        <div id="content-container">
-            <div id="site-header">hkjhkjhkj</div>            
-            <div class="content-part">
-                <h1 class="heading">Hello</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae interdum est, convallis porttitor nunc. Duis et vestibulum nibh. Ut at mi mi. Vestibulum aliquam, ligula nec sagittis blandit, purus ipsum efficitur odio, ac blandit lacus urna quis nulla. Maecenas dictum semper metus. Nullam nunc magna, aliquam a sem eget, semper fringilla felis. Integer egestas egestas aliquam. Cras facilisis neque a augue accumsan congue. Suspendisse pretium magna quis metus vehicula, ut imperdiet metus pellentesque.</p>
-                <p>Donec eget massa vitae felis varius pulvinar. Interdum et malesuada fames ac ante ipsum primis in faucibus. In blandit non ligula pulvinar tincidunt. Morbi id nunc tempus, tempus est sed, egestas nisl. Ut id libero risus. Morbi rutrum sapien vel porta consectetur. Nam sagittis ligula vitae ultrices feugiat. Donec in interdum eros, ac semper mauris. Duis malesuada eros eu eros commodo eleifend. Proin sed risus justo.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae interdum est, convallis porttitor nunc. Duis et vestibulum nibh. Ut at mi mi. Vestibulum aliquam, ligula nec sagittis blandit, purus ipsum efficitur odio, ac blandit lacus urna quis nulla. Maecenas dictum semper metus. Nullam nunc magna, aliquam a sem eget, semper fringilla felis. Integer egestas egestas aliquam. Cras facilisis neque a augue accumsan congue. Suspendisse pretium magna quis metus vehicula, ut imperdiet metus pellentesque.</p>
-                <p>Donec eget massa vitae felis varius pulvinar. Interdum et malesuada fames ac ante ipsum primis in faucibus. In blandit non ligula pulvinar tincidunt. Morbi id nunc tempus, tempus est sed, egestas nisl. Ut id libero risus. Morbi rutrum sapien vel porta consectetur. Nam sagittis ligula vitae ultrices feugiat. Donec in interdum eros, ac semper mauris. Duis malesuada eros eu eros commodo eleifend. Proin sed risus justo.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae interdum est, convallis porttitor nunc. Duis et vestibulum nibh. Ut at mi mi. Vestibulum aliquam, ligula nec sagittis blandit, purus ipsum efficitur odio, ac blandit lacus urna quis nulla. Maecenas dictum semper metus. Nullam nunc magna, aliquam a sem eget, semper fringilla felis. Integer egestas egestas aliquam. Cras facilisis neque a augue accumsan congue. Suspendisse pretium magna quis metus vehicula, ut imperdiet metus pellentesque.</p>
-                <p>Donec eget massa vitae felis varius pulvinar. Interdum et malesuada fames ac ante ipsum primis in faucibus. In blandit non ligula pulvinar tincidunt. Morbi id nunc tempus, tempus est sed, egestas nisl. Ut id libero risus. Morbi rutrum sapien vel porta consectetur. Nam sagittis ligula vitae ultrices feugiat. Donec in interdum eros, ac semper mauris. Duis malesuada eros eu eros commodo eleifend. Proin sed risus justo.</p>
+        <div id='content'>
+            <div class='content-part'>
+                <div class='content-part-content'>
+                    <p>
+                        All rights reserved. No part of this book may be reproduced, stored in a retrieval
+                        system, or transmitted in any form or by any means, without the prior written
+                        permission of the publisher, except in the case of brief quotations embedded in
+                        critical articles or reviews. 
+                    </p>
+                    <p>
+                        Every effort has been made in the preparation of this book to ensure the accuracy
+                        of the information presented. However, the information contained in this book is
+                        sold without warranty, either express or implied. Neither the author, nor Packt
+                        Publishing, and its dealers and distributors will be held liable for any damages
+                        caused or alleged to be caused directly or indirectly by this book.
+                    </p>
+                    <p>
+                        Packt Publishing has endeavored to provide trademark information about all of the
+                        companies and products mentioned in this book by the appropriate use of capitals.
+                        However, Packt Publishing cannot guarantee the accuracy of this information.<br />
+                    </p>
+                </div>
             </div>
-            <div class="content-part">
-                <h1 class="heading">Hello</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae interdum est, convallis porttitor nunc. Duis et vestibulum nibh. Ut at mi mi. Vestibulum aliquam, ligula nec sagittis blandit, purus ipsum efficitur odio, ac blandit lacus urna quis nulla. Maecenas dictum semper metus. Nullam nunc magna, aliquam a sem eget, semper fringilla felis. Integer egestas egestas aliquam. Cras facilisis neque a augue accumsan congue. Suspendisse pretium magna quis metus vehicula, ut imperdiet metus pellentesque.</p>
-                <p>Donec eget massa vitae felis varius pulvinar. Interdum et malesuada fames ac ante ipsum primis in faucibus. In blandit non ligula pulvinar tincidunt. Morbi id nunc tempus, tempus est sed, egestas nisl. Ut id libero risus. Morbi rutrum sapien vel porta consectetur. Nam sagittis ligula vitae ultrices feugiat. Donec in interdum eros, ac semper mauris. Duis malesuada eros eu eros commodo eleifend. Proin sed risus justo.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae interdum est, convallis porttitor nunc. Duis et vestibulum nibh. Ut at mi mi. Vestibulum aliquam, ligula nec sagittis blandit, purus ipsum efficitur odio, ac blandit lacus urna quis nulla. Maecenas dictum semper metus. Nullam nunc magna, aliquam a sem eget, semper fringilla felis. Integer egestas egestas aliquam. Cras facilisis neque a augue accumsan congue. Suspendisse pretium magna quis metus vehicula, ut imperdiet metus pellentesque.</p>
-                <p>Donec eget massa vitae felis varius pulvinar. Interdum et malesuada fames ac ante ipsum primis in faucibus. In blandit non ligula pulvinar tincidunt. Morbi id nunc tempus, tempus est sed, egestas nisl. Ut id libero risus. Morbi rutrum sapien vel porta consectetur. Nam sagittis ligula vitae ultrices feugiat. Donec in interdum eros, ac semper mauris. Duis malesuada eros eu eros commodo eleifend. Proin sed risus justo.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae interdum est, convallis porttitor nunc. Duis et vestibulum nibh. Ut at mi mi. Vestibulum aliquam, ligula nec sagittis blandit, purus ipsum efficitur odio, ac blandit lacus urna quis nulla. Maecenas dictum semper metus. Nullam nunc magna, aliquam a sem eget, semper fringilla felis. Integer egestas egestas aliquam. Cras facilisis neque a augue accumsan congue. Suspendisse pretium magna quis metus vehicula, ut imperdiet metus pellentesque.</p>
-                <p>Donec eget massa vitae felis varius pulvinar. Interdum et malesuada fames ac ante ipsum primis in faucibus. In blandit non ligula pulvinar tincidunt. Morbi id nunc tempus, tempus est sed, egestas nisl. Ut id libero risus. Morbi rutrum sapien vel porta consectetur. Nam sagittis ligula vitae ultrices feugiat. Donec in interdum eros, ac semper mauris. Duis malesuada eros eu eros commodo eleifend. Proin sed risus justo.</p>
+            <hr/>
+            <div class='content-part'>
+                <div class='content-part-content'>
+                    <p>
+                        All rights reserved. No part of this book may be reproduced, stored in a retrieval
+                        system, or transmitted in any form or by any means, without the prior written
+                        permission of the publisher, except in the case of brief quotations embedded in
+                        critical articles or reviews. 
+                    </p>
+                    <p>
+                        Every effort has been made in the preparation of this book to ensure the accuracy
+                        of the information presented. However, the information contained in this book is
+                        sold without warranty, either express or implied. Neither the author, nor Packt
+                        Publishing, and its dealers and distributors will be held liable for any damages
+                        caused or alleged to be caused directly or indirectly by this book.
+                    </p>
+                    <p>
+                        Packt Publishing has endeavored to provide trademark information about all of the
+                        companies and products mentioned in this book by the appropriate use of capitals.
+                        However, Packt Publishing cannot guarantee the accuracy of this information.<br />
+                    </p>
+                </div>
             </div>
+            <hr/>
         </div>
-        <div id="site-footer">
-            klkjlkj
-        </div>
+        <div id='footer'>Developed by Sriram</div>
     </body>
 </html>
