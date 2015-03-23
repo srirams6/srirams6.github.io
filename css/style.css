@@ -1246,6 +1246,17 @@
 	}
 
 /* Custom styles start here */
-#one, #two{
+#one{
+	text-align: center;
+}
+#aboutpara{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#two{
+	text-align: center;
+}
+#three > h2{
 	text-align: center;
 }
