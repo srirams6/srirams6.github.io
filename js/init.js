@@ -129,6 +129,7 @@
 					$('#goosepic').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){$('#goosepic').removeClass('animated flip');}); 
 
 				});
+				$('#goose').addClass('animated zoomInLeft');
 
 	});
 
