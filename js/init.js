@@ -121,7 +121,6 @@
 				});
 
 		// Custom JS starts here
-				$('#goose').hide()
 				
 				$(window).ready(function(){
 
@@ -132,9 +131,13 @@
 						$('#goosepic').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){$('#goosepic').removeClass('animated flip');}); 
 
 					});
+					
+					$('#goose').css("visibility", "hidden");
 					document.getElementById('goose').onload = function(){
-						$('#goose').show();
-						$('#goose').addClass('animated zoomInLeft');
+						window.setTimeout(function(){
+							$('#goose').css("visibility", "visible");
+							$('#goose').addClass('animated zoomInLeft');
+						}, 1000);
 					};
 				});
 
