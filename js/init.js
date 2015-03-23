@@ -132,8 +132,10 @@
 						$('#goosepic').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){$('#goosepic').removeClass('animated flip');}); 
 
 					});
-					$('#goose').show()
-					$('#goose').addClass('animated zoomInLeft');
+					document.getElementById('goose').onload = function(){
+						$('#goose').show();
+						$('#goose').addClass('animated zoomInLeft');
+					};
 				});
 
 	});
