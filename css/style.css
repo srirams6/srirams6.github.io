@@ -1260,3 +1260,7 @@
 #three > h2{
 	text-align: center;
 }
+
+body{
+	overflow-x: hidden;
+}

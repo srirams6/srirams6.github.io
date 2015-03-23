@@ -120,6 +120,16 @@
 					windowMargin: (skel.isActive('small') ? 0 : 50)
 				});
 
+		// Custom JS starts here
+
+				$('#goosepic').click( function(){
+					// Add shake animation
+					$('#goosepic').addClass('animated flip');
+					// Detect when animation ends
+					$('#goosepic').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){$('#goosepic').removeClass('animated flip');}); 
+
+				});
+
 	});
 
 })(jQuery);
