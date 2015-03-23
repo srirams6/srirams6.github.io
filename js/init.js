@@ -124,7 +124,7 @@
 				
 				$('#goose').css("visibility", "hidden");
 				$(window).ready(function(){
-
+					$('#goose').css("visibility", "hidden");
 					$('#goosepic').click( function(){
 						// Add shake animation
 						$('#goosepic').addClass('animated flip');
@@ -136,8 +136,10 @@
 					document.getElementById('goose').onload = function(){
 						window.setTimeout(function(){
 							$('#goose').css("visibility", "visible");
+						}, 1500);
+						window.setTimeout(function(){
 							$('#goose').addClass('animated zoomInLeft');
-						}, 1000);
+						}, 1400);
 					};
 				});
 
