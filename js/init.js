@@ -121,15 +121,20 @@
 				});
 
 		// Custom JS starts here
+				$('#goose').hide()
+				
+				$(window).ready(function(){
 
-				$('#goosepic').click( function(){
-					// Add shake animation
-					$('#goosepic').addClass('animated flip');
-					// Detect when animation ends
-					$('#goosepic').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){$('#goosepic').removeClass('animated flip');}); 
+					$('#goosepic').click( function(){
+						// Add shake animation
+						$('#goosepic').addClass('animated flip');
+						// Detect when animation ends
+						$('#goosepic').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){$('#goosepic').removeClass('animated flip');}); 
 
+					});
+					$('#goose').show()
+					$('#goose').addClass('animated zoomInLeft');
 				});
-				$('#goose').addClass('animated zoomInLeft');
 
 	});
 
