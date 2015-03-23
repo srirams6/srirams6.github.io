@@ -122,6 +122,7 @@
 
 		// Custom JS starts here
 				
+				$('#goose').css("visibility", "hidden");
 				$(window).ready(function(){
 
 					$('#goosepic').click( function(){
@@ -132,7 +133,6 @@
 
 					});
 					
-					$('#goose').css("visibility", "hidden");
 					document.getElementById('goose').onload = function(){
 						window.setTimeout(function(){
 							$('#goose').css("visibility", "visible");
