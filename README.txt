@@ -1,11 +1,11 @@
-Photon by HTML5 UP
+Strata by HTML5 UP
 html5up.net | @n33co
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
 
-A simple (gradient-heavy) single pager that revisits a style I messed with on two
-previous designs (Tessellate and Telephasic). Fully responsive, built on Sass,
-and, as usual, loaded with an assortment of pre-styled elements. Have fun! :)
+A simple, minimalist template that actually began life as an unused redesign of n33.co
+(my personal site). Includes a (configurable) parallax background effect, Poptrox-powered
+lightbox gallery, a bunch of pre-styled elements, and Sass sources for the Sass-inclined.
 
 Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
 you can use for pretty much whatever.
@@ -31,4 +31,4 @@ Credits:
 		html5shiv.js (@afarkas @jdalton @jon_neal @rem)
 		CSS3 Pie (css3pie.com)
 		background-size polyfill (github.com/louisremi)
-		Skel (getskel.com)
+		skel (getskel.com)
