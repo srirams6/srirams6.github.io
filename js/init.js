@@ -127,9 +127,15 @@
 					$('#goose').css("visibility", "hidden");
 					$('#goosepic').click( function(){
 						// Add shake animation
-						$('#goosepic').addClass('animated flip');
+						$('#goosepic').addClass('animated zoomOutRight');
 						// Detect when animation ends
-						$('#goosepic').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){$('#goosepic').removeClass('animated flip');}); 
+						$('#goosepic').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+							$('#goosepic').removeClass('animated zoomOutRight');
+							$('#goosepic').addClass('animated zoomInLeft');
+							$('#goosepic').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+								$('#goosepic').removeClass('animated zoomInLeft');
+							});
+						}); 
 
 					});
 					
