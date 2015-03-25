@@ -148,6 +148,27 @@
 						}, 1400);
 					};
 				});
+				$("footer > ul").removeClass("animated pulse");
+				$('#two').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+				  if (isInView) {
+				  	// alert("L")
+
+				    // element is now visible in the viewport
+				    if (visiblePartY == 'top') {
+						$("footer > ul").addClass("animated pulse");
+						$('#footer > ul').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+							$('#footer > ul').removeClass('animated pulse');
+						});
+				      // top part of element is visible
+				    } else if (visiblePartY == 'bottom') {
+				      // bottom part of element is visible
+				    } else {
+				      // whole part of element is visible
+				    }
+				  } else {
+				    // element has gone out of viewport
+				  }
+				});
 
 	});
 
