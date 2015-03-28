@@ -1265,6 +1265,12 @@ body{
 	overflow-x: hidden;
 }
 
-p{
+section{
 	font-size: 1.1em;
+}
+p{
+	color:grey;
+}
+h1, h2, h3{
+	/* color: black; */
 }
