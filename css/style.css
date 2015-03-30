@@ -1274,3 +1274,6 @@ p{
 h1, h2, h3{
 	/* color: black; */
 }
+#goosepic{
+	cursor: pointer;
+}
