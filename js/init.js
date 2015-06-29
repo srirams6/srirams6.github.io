@@ -122,9 +122,9 @@
 
 		// Custom JS starts here
 				
-				$('#goose').css("visibility", "hidden");
+				$('#goosepicimg').css("visibility", "hidden");
 				$(window).ready(function(){
-					$('#goose').css("visibility", "hidden");
+					$('#goosepicimg').css("visibility", "hidden");
 					$('#goosepic').click( function(){
 						// Add shake animation
 						$('#goosepic').addClass('animated zoomOutRight');
@@ -139,12 +139,12 @@
 
 					});
 					
-					document.getElementById('goose').onload = function(){
+					document.getElementById('goosepicimg').onload = function(){
 						window.setTimeout(function(){
-							$('#goose').css("visibility", "visible");
+							$('#goosepicimg').css("visibility", "visible");
 						}, 1500);
 						window.setTimeout(function(){
-							$('#goose').addClass('animated zoomInLeft');
+							$('#goosepicimg').addClass('animated zoomInLeft');
 						}, 1400);
 					};
 				});
