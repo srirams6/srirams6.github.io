@@ -1,3 +1,3 @@
-# srirams6.github.io
+# ssundarraj.github.io
 
 My personal website.
