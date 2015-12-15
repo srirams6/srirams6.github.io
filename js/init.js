@@ -124,7 +124,6 @@
 				
 				$('#goosepicimg').css("visibility", "hidden");
 				$(window).ready(function(){
-					// $('#goosepicimg').css("visibility", "hidden");
 					$('#goosepic').click( function(){
 						// Add shake animation
 						$('#goosepic').removeClass('animated bounce');
@@ -140,15 +139,6 @@
 
 					});
 					
-					$('#goosepic').mouseover(function(){
-						// Add shake animation
-						$('#goosepic').addClass('animated bounce');
-						// Detect when animation ends
-						$('#goosepic').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-							$('#goosepic').removeClass('animated bounce');
-						}); 
-
-					});
 
 					document.getElementById('goosepicimg').onload = function(){
 						window.setTimeout(function(){
