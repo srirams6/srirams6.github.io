@@ -140,8 +140,10 @@
 					
 
 					document.getElementById('goosepicimg').onload = function(){
+						console.log("HELLO111");
 						window.setTimeout(function(){
 							$('#goosepicimg').css("visibility", "visible");
+							console.log("HELLO");
 						}, 1500);
 						window.setTimeout(function(){
 							$('#goosepicimg').addClass('animated zoomInLeft');
