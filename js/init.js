@@ -125,8 +125,7 @@
 				$('#goosepicimg').css("visibility", "hidden");
 				$(window).ready(function(){
 					$('#goosepic').click( function(){
-						// Add shake animation
-						$('#goosepic').removeClass('animated bounce');
+						// Start animation
 						$('#goosepic').addClass('animated zoomOutRight');
 						// Detect when animation ends
 						$('#goosepic').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
