@@ -122,7 +122,7 @@
 
 		// Custom JS starts here
 				
-				$('#goosepicimg').css("visibility", "hidden");
+				// $('#goosepicimg').css("visibility", "hidden");
 				$(window).ready(function(){
 					$('#goosepic').click( function(){
 						// Start animation
