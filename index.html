@@ -1,108 +1,118 @@
 <!DOCTYPE HTML>
-<!--
-	                .__                          
-	  _____________ |__|_______ _____     _____  
-	 /  ___/\_  __ \|  |\_  __ \\__  \   /     \ 
-	 \___ \  |  | \/|  | |  | \/ / __ \_|  Y Y  \
-	/______> |__|   |__| |__|   (______/|__|_|__/
--->
 <html>
-  <head>
-    <title>Sriram Sundarraj</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="Sriram Sundarraj">
-    <meta name="keywords" content="Sriram,Sundarraj,Sriram Sundarraj">
-    <meta name="author" content="Sriram Sundarraj">
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-64291420-1', 'auto');
-      ga('send', 'pageview');
-    </script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <style>
-      body {
-        top: 0; 
-        left: 0; 
-        right: 0; 
-        bottom: 0; 
-        background: url(bg_medium.jpg) no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+<head>
+  <title>Sriram Sundarraj</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="description" content="Sriram Sundarraj">
+  <meta name="keywords" content="Sriram,Sundarraj,Sriram Sundarraj">
+  <meta name="author" content="Sriram Sundarraj">
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-64291420-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+
+    :root {
+      --name-font-size: 6vw;
+      --email-font-size: 3vw;
+      --links-font-size: 1.5vw;
+      --bg-color: #E28E65;
+      --text-color: black;
+      --card-color: var(--bg-color);
+      --name-color: var(--text-color);
+      --email-color: var(--text-color);
+      --links-color: var(--text-color);
+    }
+
+    body {
+      background-color: var(--bg-color);
+      font-family: 'Source Code Pro', monospace;
+    }
+
+    #container {
+      background-color: var(--card-color);
+    }
+
+    #card {
+      display: flex;
+      flex-direction: column;
+      height: 30vh;
+      margin-top: 35vh;
+    }
+
+    #card div {
+      margin: 0 auto;
+    }
+
+    #name {
+      font-size: var(--name-font-size);
+      color: var(--name-color);
+    }
+
+    #email {
+      font-size: var(--email-font-size);
+      color: var(--email-color);
+    }
+
+    #links a {
+      font-size: var(--links-font-size);
+      color: var(--links-color);
+    }
+
+    #links a:not(:first-child) {
+      padding-left: 10px;
+    }
+
+    #ee {
+      color: #E08A63;
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      font-size: 0.7em;
+    }
+
+    a {
+      color: unset;
+    }
+
+    @media(max-width: 1000px) {
+      :root {
+        --name-font-size: 9.5vw;
+        --email-font-size: 7vw;
+        --links-font-size: 6vw;
       }
-      #container {
-        background-color: #eee;
-        box-shadow: 0 0 50px #202020;
-        border-radius: 3px;
-        margin-top: 35vh;
-        margin-right: 35vw;
-        margin-left: 35vw;
-        width: 30vw;
-        height: 30vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+      #links a:not(:first-child) {
+        padding-left: 20px;
       }
-      #content >  h2,  h4 {
-        align: float;
-        margin-left: auto;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 100;
-        text-align: center;
-        color: rgba(50, 50, 50, 0.8);
-      }
-      #content > h4 {
-        color: rgb(50, 50, 50);
-      }
-      a {
-        text-decoration: none;
-      }
-      a, a:link, a:hover, a:visited {
-        color: inherit;
-      }
-      @media(max-width: 980px) {
-        #content > h4 {
-          font-size: 30px;
-        }
-        body {
-          height: 100%;
-          overflow: hidden;
-        }
-        #container {
-          height: 25vh;
-          margin-top: 37.5vh;
-          width: 60vw;
-          margin-right: 20vw;
-          margin-left: 20vw;
-          overflow: hidden;
-        }
-      }
-      #ee {
-        color: #555;
-        position: absolute;
-        bottom: 15px;
-        right: 15px;
-        font-size: 0.7em;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="container">
-      <div id="content">
-      <h4>ssundarraj@gmail.com
-      <h4>
-        <a href="https://github.com/ssundarraj">GitHub</a> |
-        <a href="https://linkedin.com/in/sriramsundarraj">LinkedIn</a> |
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="card">
+      <div id="name">
+        <span>Sriram Sundarraj</span>
+      </div>
+      <div id="email">ssundarraj@gmail.com</div>
+      <div id="links">
+        <a href="https://github.com/ssundarraj">GitHub</a>
+        <a href="https://linkedin.com/in/sriramsundarraj">LinkedIn</a>
         <a href="https://www.instagram.com/ssundarraj_/">Instagram</a>
       </div>
     </div>
-    <a id="ee" href="./hi.html">hi</a>
-  </body>
+  </div>
+  <a id="ee" href="./hi.html">hi</a>
+</body>
 
 </html>
-
