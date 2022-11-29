@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Sriram Sundarraj</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+
+    :root {
+      --name-font-size: 6vw;
+      --email-font-size: 3vw;
+      --links-font-size: 1.5vw;
+      --bg-color: #E28E65;
+      --text-color: black;
+      --card-color: var(--bg-color);
+      --name-color: var(--text-color);
+      --email-color: var(--text-color);
+      --links-color: var(--text-color);
+    }
+
+    body {
+      background-color: var(--bg-color);
+      font-family: 'Source Code Pro', monospace;
+    }
+
+    #container {
+      background-color: var(--card-color);
+    }
+
+    #card {
+      display: flex;
+      flex-direction: column;
+      height: 30vh;
+      margin-top: 35vh;
+    }
+
+    #card div {
+      margin: 0 auto;
+    }
+
+    #name {
+      font-size: var(--name-font-size);
+      color: var(--name-color);
+    }
+
+    #email {
+      font-size: var(--email-font-size);
+      color: var(--email-color);
+    }
+
+    #links a {
+      font-size: var(--links-font-size);
+      color: var(--links-color);
+    }
+
+    #links a:not(:first-child) {
+      padding-left: 10px;
+    }
+
+    #ee {
+      color: #E08A63;
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      font-size: 0.7em;
+    }
+
+    a {
+      color: unset;
+    }
+
+    @media(max-width: 1000px) {
+      :root {
+        --name-font-size: 9.5vw;
+        --email-font-size: 7vw;
+        --links-font-size: 6vw;
+      }
+
+      #links a:not(:first-child) {
+        padding-left: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="card">
+      Paywall got you down? Want to open a link in archive.today easily? Drag and drop this into your browser bar:
+      <a
+        onclick="return false"
+        rel="nofollow"
+        href="javascript: (() => {  if (!window.location.href.startsWith('https://archive.')) {window.location = 'https://archive.today/' + window.location.href; }})();">
+        Open in archive.today
+    </a>
+    </div>
+  </div>
+  <a id="ee" href="./hi.html">hi</a>
+</body>
+
+</html>
