@@ -57,20 +57,13 @@
     }
 
     #links a {
+      display: inline-block;
       font-size: var(--links-font-size);
       color: var(--links-color);
     }
 
     #links a:not(:first-child) {
       padding-left: 10px;
-    }
-
-    #ee {
-      color: #E08A63;
-      position: absolute;
-      bottom: 15px;
-      right: 15px;
-      font-size: 0.7em;
     }
 
     a {
@@ -88,6 +81,11 @@
         padding-left: 20px;
       }
     }
+
+    #links a:hover{
+      transition: transform 0.3s ease;
+      transform: translateY(-5px) scale(1.1);
+    }
   </style>
 </head>
 
@@ -99,13 +97,12 @@
       </div>
       <div id="email">ssundarraj@gmail.com</div>
       <div id="links">
-        <a href="https://github.com/ssundarraj">GitHub</a>
+        <a href="https://github.com/ssundarraj" class="bounce">GitHub</a>
         <a href="https://linkedin.com/in/sriramsundarraj">LinkedIn</a>
         <a href="https://www.twitter.com/ssundarraj_/">Twitter</a>
       </div>
     </div>
   </div>
-  <a id="ee" href="./hi.html">hi</a>
 </body>
 
 </html>
