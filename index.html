@@ -82,6 +82,18 @@
       }
     }
 
+    img {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+
+    #links img:hover{
+      transition: transform 0.3s ease;
+      transform: translateY(-5px) scale(1.1);
+    }
+
     #links a:hover{
       transition: transform 0.3s ease;
       transform: translateY(-5px) scale(1.1);
@@ -96,9 +108,15 @@
         <span>Sriram Sundarraj</span>
       </div>
       <div id="links">
-        <a href="https://github.com/ssundarraj" class="bounce">GitHub</a>
-        <a href="https://linkedin.com/in/sriramsundarraj">LinkedIn</a>
-        <a href="https://www.twitter.com/ssundarraj_/">Twitter</a>
+        <a href="https://github.com/ssundarraj" class="bounce">
+          <img alt="GitHub" src="github.svg">
+        </a>
+        <a href="https://linkedin.com/in/sriramsundarraj">
+          <img alt="LinkedIn" src="linkedin.svg">
+        </a>
+        <a href="https://www.twitter.com/ssundarraj_/">
+          <img alt="Twitter" src="twitter.svg">
+        </a>
       </div>
     </div>
   </div>
