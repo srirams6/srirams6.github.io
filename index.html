@@ -45,8 +45,17 @@
     }
 
     #name {
+      background-color: white;
+      border-radius: 12px;
       font-size: var(--name-font-size);
       color: var(--name-color);
+    }
+
+    #links {
+      padding: 0 12px 4px 12px;
+      border-bottom-right-radius: 12px;
+      border-bottom-left-radius: 12px;
+      background-color: white;
     }
 
     #links a {
@@ -81,9 +90,89 @@
       margin-top: 20px;
     }
 
-    #links img:hover{
+    #links img:hover {
       transition: transform 0.3s ease;
       transform: translateY(-5px) scale(1.1);
+    }
+
+    /* Forked from https://codepen.io/hexagoncircle/pen/Exyewjv by ryanmulligan */
+    body {
+      --s: 25vmin;
+      --p: calc(var(--s) / 2);
+      --c1: pink;
+      --c2: dodgerblue;
+      --c3: white;
+      --bg: var(--c3);
+      --d: 15000ms;
+      --e: cubic-bezier(.95, -.16, .58, .81);
+
+      background-color: var(--bg);
+      background-image:
+        linear-gradient(45deg, var(--c1) 25%, transparent 25%),
+        linear-gradient(-45deg, var(--c1) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, var(--c2) 75%),
+        linear-gradient(-45deg, transparent 75%, var(--c2) 75%);
+      background-size: var(--s) var(--s);
+      background-position:
+        calc(var(--p) * 1) calc(var(--p) * 4),
+        calc(var(--p) * -1) calc(var(--p) * 5),
+        calc(var(--p) * 1) calc(var(--p) * 3),
+        calc(var(--p) * -1) calc(var(--p) * 4);
+      animation:
+        position var(--d) var(--e) infinite;
+    }
+
+    @keyframes position {
+
+      0%,
+      20% {
+        background-position:
+          calc(var(--p) * 1) calc(var(--p) * 0),
+          calc(var(--p) * -1) calc(var(--p) * 1),
+          calc(var(--p) * 1) calc(var(--p) * -1),
+          calc(var(--p) * -1) calc(var(--p) * 0);
+      }
+
+      25%,
+      45% {
+        background-position:
+          calc(var(--p) * 1) calc(var(--p) * 4),
+          calc(var(--p) * -1) calc(var(--p) * 5),
+          calc(var(--p) * 1) calc(var(--p) * 3),
+          calc(var(--p) * -1) calc(var(--p) * 4);
+      }
+
+      50%,
+      70% {
+        background-position:
+          calc(var(--p) * 3) calc(var(--p) * 8),
+          calc(var(--p) * -3) calc(var(--p) * 9),
+          calc(var(--p) * 2) calc(var(--p) * 7),
+          calc(var(--p) * -2) calc(var(--p) * 8);
+      }
+
+      75%,
+      95% {
+        background-position:
+          calc(var(--p) * 3) calc(var(--p) * 12),
+          calc(var(--p) * -3) calc(var(--p) * 13),
+          calc(var(--p) * 2) calc(var(--p) * 11),
+          calc(var(--p) * -2) calc(var(--p) * 12);
+      }
+
+      100% {
+        background-position:
+          calc(var(--p) * 5) calc(var(--p) * 16),
+          calc(var(--p) * -5) calc(var(--p) * 17),
+          calc(var(--p) * 5) calc(var(--p) * 15),
+          calc(var(--p) * -5) calc(var(--p) * 16);
+      }
+    }
+
+    @media (prefers-reduced-motion) {
+      body {
+        animation: none;
+      }
     }
   </style>
 </head>
