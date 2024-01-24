@@ -23,11 +23,9 @@
 
     :root {
       --name-font-size: 6vw;
-      --email-font-size: 3vw;
       --links-font-size: 1.5vw;
       --text-color: black;
       --name-color: var(--text-color);
-      --email-color: var(--text-color);
       --links-color: var(--text-color);
     }
 
@@ -51,11 +49,6 @@
       color: var(--name-color);
     }
 
-    #email {
-      font-size: var(--email-font-size);
-      color: var(--email-color);
-    }
-
     #links a {
       display: inline-block;
       font-size: var(--links-font-size);
@@ -73,7 +66,6 @@
     @media(max-width: 1000px) {
       :root {
         --name-font-size: 9.5vw;
-        --email-font-size: 7vw;
         --links-font-size: 6vw;
       }
 
@@ -90,11 +82,6 @@
     }
 
     #links img:hover{
-      transition: transform 0.3s ease;
-      transform: translateY(-5px) scale(1.1);
-    }
-
-    #links a:hover{
       transition: transform 0.3s ease;
       transform: translateY(-5px) scale(1.1);
     }
